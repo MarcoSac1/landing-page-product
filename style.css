@@ -9,4 +9,53 @@ header {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
+    color: #3d3b38;
+    display: flex;
+}
+
+a{
+    color: #3d3b38;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2E45CC;
+}
+
+
+
+section.home{
+    background-color: rebeccapurple;
+    height: 100vh;
+}
+
+
+section.strongPonit{
+    background-color: goldenrod;
+    height: 100vh;
+}
+
+
+section.recensioni{
+    background-color: green;
+    height: 100vh;
+}
+
+
+section.paperelle{
+    background-color: fuchsia;
+    height: 100vh;
+}
+
+
+section.domande{
+    background-color: gray;
+    height: 100vh;
+}
+
+
+section.newsletter{
+    background-color: rebeccapurple;
+    height: 100vh;
 }
