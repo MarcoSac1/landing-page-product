@@ -13,42 +13,57 @@
 <body>
     <header>
         <nav>
-            <div>
-                <img src="./asset/logo.png" alt="Main-logo">
+            <div id="logo">
+                <a href="#home">
+                    <img class="logo" src="./asset/logo.png" alt="Main-logo">
+                </a>
             </div>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="#home">
+                    <img class="logo" src="./asset/logo.png" alt="Main-logo">
+                </a>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <section>
+                    <ul>
+                        <li>
+                            <a href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#strongPoint">
+                                I punti di forza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#recensioni">
+                                Recensioni
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#paperelle">
+                                Paperelle
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#FAQs">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#newsletter">
+                                Newsletter
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
             <div>
-                <ul>
-                    <li>
-                        <a href="#home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#strongPoint">
-                            I punti di forza
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Recensioni
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Paperelle
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            FAQs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Newsletter
-                        </a>
-                    </li>
-                </ul>
+                <div id="main">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
             </div>
         </nav>
     </header>
@@ -64,10 +79,22 @@
                 I punti di forza
             </div>
         </section>
-        <section class="recensioni"> recensioni</section>
-        <section class="paperelle">paperelle</section>
-        <section class="domande">FAQs</section>
-        <section class="newsletter">Newsletter</section>
+
+        <section class="recensioni">
+            <div id="recensioni">recensioni</div>
+        </section>
+        
+        <section class="paperelle">
+            <div id="paperelle">paperelle</div>
+        </section>
+        
+        <section class="domande">
+            <div id="FAQs">FAQs</div>
+        </section>
+        
+        <section class="newsletter">
+            <div id="newsletter">Newsletter</div>
+        </section>
     </main>
     <script type="text/javascript" src="script.js"></script>
 </body>

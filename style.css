@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+    width: 100vw;
+}
+
 header {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
@@ -11,51 +22,99 @@ header {
     font-style: normal;
     line-height: 1.5;
     color: #3d3b38;
-    display: flex;
 }
 
-a{
-    color: #3d3b38;
-    text-decoration: none;
+img.logo{
+    height: 4rem;
+    padding: .5rem;
 }
-
-a:hover{
-    color: #2E45CC;
-}
-
-
-
 section.home{
     background-color: rebeccapurple;
-    height: 100vh;
+    height: calc(100vh );
+    
 }
-
 
 section.strongPoint{
     background-color: goldenrod;
-    height: 100vh;
+    height:calc(100vh - 77px);
 }
 
 
 section.recensioni{
     background-color: green;
-    height: 100vh;
+    height:calc(100vh - 77px);
 }
-
 
 section.paperelle{
     background-color: fuchsia;
-    height: 100vh;
+    height:calc(100vh - 77px);
 }
 
 
 section.domande{
     background-color: gray;
-    height: 100vh;
+    height:calc(100vh - 77px);
 }
 
 
 section.newsletter{
     background-color: rebeccapurple;
-    height: 100vh;
+    height:calc(100vh - 77px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: .5rem;
+}
+
+#mySidenav img.logo {
+    height: 3.5rem;
+}
+
+.closebtn{
+    margin-top: .5rem;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+    color: #3d3b38;
+
+}
+
+.sidenav a:hover {
+    color: #2E45CC;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #3d3b38;
+
+}
+
+#main {
+    transition: margin-right .5s;
+    padding: 16px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    
 }
