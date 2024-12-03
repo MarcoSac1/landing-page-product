@@ -9,14 +9,10 @@ body{
     overflow-x: hidden;
 }
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
     z-index: 1;
     top: 0;
-    background-color: #fff;
     width: 100vw;
+    background-color: #fff;
 }
 
 header {
@@ -42,16 +38,10 @@ body main {
     color: #3d3b38;
 }
 
-section{
-    height:calc(100vh - 77px);
-    padding-top: -77px; /* Altezza del  header */
-    margin-top: 77px; /* Negativo per correggere lo spazio extra */
-}
-
-.home img{
+/* .home img{
     width:100%;
     background-size: contain;    
-}
+} */
 
 #banner{
     background-image: url(./asset/banner-bg.png);

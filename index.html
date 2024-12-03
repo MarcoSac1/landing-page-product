@@ -12,68 +12,66 @@
     <title>Landing Page Product</title>
 </head>
 <body>
-    <header >
-        <nav>
-            <div id="logo">
+    
+    <nav class="navbar position-sticky top-0 start-0 bg-body-tertiary">
+        <div class="container-fluid">
+            <div id="logo" class="col-sm-4">
                 <a href="#home">
                     <img class="logo" src="./asset/logo.png" alt="Main-logo">
                 </a>
             </div>
-
-            <div id="mySidenav" class="sidenav">
-                <a href="#home">
-                    <img class="logo" src="./asset/logo.png" alt="Main-logo">
-                </a>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <section>
-                    <ul>
-                        <li>
-                            <a href="#home">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#strongPoint">
-                                I punti di forza
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#recensioni">
-                                Recensioni
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#paperelle">
-                                Paperelle
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#FAQs">
-                                FAQs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#newsletter">
-                                Newsletter
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div>
-                <div id="main">
-                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <div id="main col-sm-12">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <div id="mySidenav" class="sidenav">
+                    <a href="#home">
+                        <img class="logo" src="./asset/logo.png" alt="Main-logo">
+                    </a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <section>
+                        <ul>
+                            <li>
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#strongPoint">
+                                    I punti di forza
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#recensioni">
+                                    Recensioni
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#paperelle">
+                                    Paperelle
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#FAQs">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#newsletter">
+                                    Newsletter
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </div>  
+        </div>
+    </nav>
+    
     <main>
         
-    <section id="home" class="home">
+    <section id="home" class="home container-fluid mb-4">
         <div class="row">
             <div class="col-sm-12 col-lg-6 p-0">
-                <img src="./asset/banner-image.png" alt="paperella">
+                <img src="./asset/banner-image.png" alt="paperella" class="img-fluid">
             </div>
             <div id="banner" class="col-sm-12 col-lg-6">
                 <h1 class="">Rubber Duck</h1>
@@ -91,91 +89,95 @@
         </div>
     </section>
 
-        <section id="strongPoint" class="strongPoint ">
-            <div class="row">
-                <div class="col-sm-12 col-lg-4">
+    <section id="strongPoint" class="strongPoint container align-item-center text-center mb-4">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
 
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Lunga Durata della Batteria
-                            </h3>
-                            <p>
-                                Goditi ore di assistenza continua nella risoluzione dei bug grazie alla lunga durata della "batteria" (ovvero, la tua pazienza) della paperela di gomma.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Compatibilità Universale
-                            </h3>
-                            <p>
-                                Funziona con tutti i linguaggi di programmazione e sistemi operativi, la paperella di gomma è l'unico strumento di debugging che  non necessita di agiornamenti.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Design Elegante
-                            </h3>
-                            <p>
-                                Mostra con orgoglio il design elegante e raffinato della tua paperela di gomma, disponibile in vari colori per abbinarsi al tuo stile di programmatore.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-sm-12 col-lg-4" id="paperella-malefica">
-                    <div class="card border border-0">
-                        <img src="./asset/invisible.png" alt="invisible duck">
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Lunga Durata della Batteria
+                        </h3>
+                        <p>
+                            Goditi ore di assistenza continua nella risoluzione dei bug grazie alla lunga durata della "batteria" (ovvero, la tua pazienza) della paperela di gomma.
+                        </p>
                     </div>
                 </div>
-                
-                <div class="col-sm-12 col-lg-4">
-                    
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Resistente agli Spruzzi
-                            </h3>
-                            <p>
-                                Perfetta per resistere ai piccoli incidenti con caffè e bevande, la tua paperela di gomma non teme schizzi, mantenendoti sempre pronto per il debugging.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Portabilità
-                            </h3>
-                            <p>
-                                Leggera e facile da trasportare, la paperella di gomma può essere il ttuo compagno di lavoro ovunque tu vada. Portala con te per un supporto costante.
-                            </p>
-                        </div>
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Compatibilità Universale
+                        </h3>
+                        <p>
+                            Funziona con tutti i linguaggi di programmazione e sistemi operativi, la paperella di gomma è l'unico strumento di debugging che  non necessita di agiornamenti.
+                        </p>
                     </div>
+                </div>
 
-                    <div class="card border border-0">
-                        <div class="card-body">
-                            <h3>
-                                Promemoria Anti-Stress
-                            </h3>
-                            <p>
-                                Quando lo stress del codice diventa troppo, spremi la tua paperella di gomma per  una rapido sollievo anti-strees, senza bisogno di software complicati.
-                            </p>
-                        </div>
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Design Elegante
+                        </h3>
+                        <p>
+                            Mostra con orgoglio il design elegante e raffinato della tua paperela di gomma, disponibile in vari colori per abbinarsi al tuo stile di programmatore.
+                        </p>
                     </div>
-
                 </div>
             </div>
-        </section>
 
-        <section class="recensioni">
+            <div class="col-sm-12 col-lg-4" id="paperella-malefica">
+                <div class="card border border-0 ">
+                    <img src="./asset/invisible.png" alt="invisible duck">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-lg-4">
+                
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Resistente agli Spruzzi
+                        </h3>
+                        <p>
+                            Perfetta per resistere ai piccoli incidenti con caffè e bevande, la tua paperela di gomma non teme schizzi, mantenendoti sempre pronto per il debugging.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Portabilità
+                        </h3>
+                        <p>
+                            Leggera e facile da trasportare, la paperella di gomma può essere il ttuo compagno di lavoro ovunque tu vada. Portala con te per un supporto costante.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border border-0">
+                    <div class="card-body">
+                        <h3>
+                            Promemoria Anti-Stress
+                        </h3>
+                        <p>
+                            Quando lo stress del codice diventa troppo, spremi la tua paperella di gomma per  una rapido sollievo anti-strees, senza bisogno di software complicati.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <section class="recensioni mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Cosa ne pensano i nostri sviluppatori</h1>
+                </div>
+            </div>
             <div id="recensioni">recensioni</div>
         </section>
         
