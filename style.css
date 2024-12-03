@@ -29,11 +29,53 @@ img.logo{
     height: 4rem;
     padding: .5rem;
 }
+
+body main {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.24;
+    color: #3d3b38;
+}
+
 section.home{
-    background-color: rebeccapurple;
     height:calc(100vh - 77px);
     padding-top: -77px; /* Altezza del tuo header */
     margin-top: 77px; /* Negativo per correggere lo spazio extra */
+}
+
+.home img{
+    width:100%;
+    background-size: cover;    
+}
+
+#banner{
+    background-image: url(./asset/banner-bg.png);
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    
+}
+
+#banner h1{
+    font-size: 2.5rem;
+}
+
+.btn{
+    background-color: transparent;
+    padding: .8rem;
+    border-radius: 0;
+    border: solid 1.5px #3d3b38;
+}
+
+.btn:hover{
+    background-color: #3d3b38;
+    transition-duration: 0.4s;
+    color: white;
 }
 
 section.strongPoint{
