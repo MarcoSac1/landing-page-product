@@ -30,8 +30,7 @@ img.logo{
 }
 section.home{
     background-color: rebeccapurple;
-    height: calc(100vh );
-    
+    height:calc(100vh - 77px);
 }
 
 section.strongPoint{
@@ -73,10 +72,12 @@ section.newsletter{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: .5rem;
+    filter: drop-shadow(0 20px 500px #3d3b38);
 }
 
 #mySidenav img.logo {
     height: 3.5rem;
+
 }
 
 .closebtn{
