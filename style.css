@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-padding-top: 77px
 }
 
 nav{
@@ -31,6 +32,8 @@ img.logo{
 section.home{
     background-color: rebeccapurple;
     height:calc(100vh - 77px);
+    padding-top: -77px; /* Altezza del tuo header */
+    margin-top: 77px; /* Negativo per correggere lo spazio extra */
 }
 
 section.strongPoint{
