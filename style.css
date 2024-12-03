@@ -5,6 +5,9 @@
     scroll-padding-top: 77px
 }
 
+body{
+    overflow-x: hidden;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -39,21 +42,20 @@ body main {
     color: #3d3b38;
 }
 
-section.home{
+section{
     height:calc(100vh - 77px);
-    padding-top: -77px; /* Altezza del tuo header */
+    padding-top: -77px; /* Altezza del  header */
     margin-top: 77px; /* Negativo per correggere lo spazio extra */
 }
 
 .home img{
     width:100%;
-    background-size: cover;    
+    background-size: contain;    
 }
 
 #banner{
     background-image: url(./asset/banner-bg.png);
     background-size: cover;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -78,33 +80,6 @@ section.home{
     color: white;
 }
 
-section.strongPoint{
-    background-color: goldenrod;
-    height:calc(100vh - 77px);
-}
-
-
-section.recensioni{
-    background-color: green;
-    height:calc(100vh - 77px);
-}
-
-section.paperelle{
-    background-color: fuchsia;
-    height:calc(100vh - 77px);
-}
-
-
-section.domande{
-    background-color: gray;
-    height:calc(100vh - 77px);
-}
-
-
-section.newsletter{
-    background-color: rebeccapurple;
-    height:calc(100vh - 77px);
-}
 
 .sidenav {
     height: 100%;
