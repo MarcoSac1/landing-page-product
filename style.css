@@ -38,10 +38,7 @@ body main {
     color: #3d3b38;
 }
 
-/* .home img{
-    width:100%;
-    background-size: contain;    
-} */
+
 
 #banner{
     background-image: url(./asset/banner-bg.png);
@@ -53,8 +50,13 @@ body main {
     
 }
 
-#banner h1{
+h1{ 
     font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 600;
 }
 
 .btn{
@@ -124,6 +126,13 @@ body main {
 }
 
 
+#paperelle {
+    background-color: #f8f8f8;
+}
+
+.green{
+    color:#04DF6C;
+}
 
 @media screen and (max-height: 450px) {
     
