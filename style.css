@@ -51,7 +51,6 @@ body main {
 }
 
 h1{ 
-    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -132,6 +131,16 @@ h3{
 
 .green{
     color:#04DF6C;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit;
+}
+
+button.accordion-button:focus{
+    box-shadow: inherit;
 }
 
 @media screen and (max-height: 450px) {
