@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-padding-top: 77px
+    scroll-padding-top: 80px
 }
 
 body{
@@ -139,7 +139,13 @@ h3{
 
 svg.icon{
     color: #2E45CC;
-    height: 35px;
+    height: 30px;
+}
+
+.circle{
+    border: #3d3b38 1px solid;
+
+    border-radius: 1rem;
 }
 .accordion-button:not(.collapsed) {
     background-color: transparent !important;
