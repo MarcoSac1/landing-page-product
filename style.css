@@ -129,7 +129,7 @@ h3{
 }
 
 
-.paperelle {
+.grayBg {
     background-color: #f8f8f8;
 }
 
@@ -146,6 +146,9 @@ svg.icon{
     color: inherit;
 }
 
+#newsletter{
+    background-color: #f8f8f8;
+}
 button.accordion-button:focus{
     box-shadow: inherit;
 }
