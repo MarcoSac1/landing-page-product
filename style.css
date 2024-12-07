@@ -11,6 +11,7 @@ body{
 nav{
     z-index: 1;
     top: 0;
+    left: 0;
     width: 100vw;
     background-color: #fff;
 }
@@ -99,6 +100,15 @@ h3{
     margin-top: .5rem;
 }
 
+ul{
+    padding: 0;
+}
+
+ul,
+li{
+list-style: none;
+}
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -154,6 +164,32 @@ input {
     height: 30px;
 }
 
+swiper-container {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.recensioni{
+    flex-direction: column;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .accordion-button:not(.collapsed) {
     background-color: transparent !important;
     color: inherit;

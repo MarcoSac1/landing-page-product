@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Landing Page Product</title>
 </head>
 
 <body>
-
-    <nav class="navbar position-sticky top-0 start-0 bg-body-tertiary">
+    <nav class="navbar position-sticky top-0 left-0 bg-body-tertiary">
         <div class="container-fluid">
             <div id="logo" class="col-sm-4">
                 <a href="#home">
@@ -29,7 +31,11 @@
                 </a>
             </div>
             <div id="main col-sm-12">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <svg class="icon m-2">
+                        <use  xlink:href="icons.svg#navbar-icon"></use>
+                    </svg>
+                </span>
                 <div id="mySidenav" class="sidenav">
                     <a href="#home">
                         <img class="logo" src="./asset/logo.png" alt="Main-logo">
@@ -187,89 +193,70 @@
             </div>
         </section>
 
-        <section id="recensioni" class="recensioni container mb-4">
-            <div class="row d-flex align-items-center text-center">
+        <section id="recensioni" class="recensioni d-flex justify-content-center  align-item-center text-center mb-4">
                 <h1 class="pb-5">Cosa ne pensano i nostri sviluppatori</h1>
-                <div class="col-12">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-sm-12  col-lg-4 mb-4">
-                                        <p>"La paperella di gomma è diventata il mio strumento di debugging preferito.
-                                            Spiegare i problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere
-                                            bug che altrimenti mi avrebbero fatto impazzire. È anche un ottimo
-                                            antistress nelle giornate difficili!"</p>
-                                        <p class="text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </p>
-                                        <h6><strong>David William - Feb 22, 2023</strong></h6>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-4   mb-4 ">
-                                        <p>"Non avrei mai immaginato quanto una semplice paperella di gomma potesse fare
-                                            la differenza. È incredibile come verbalizzare i problemi davanti alla
-                                            paperella mi aiuti a vedere soluzioni che prima non notavo. Inoltre, è
-                                            carinissima sulla mia scrivania!"</p>
-                                        <p class="text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </p>
-                                        <h6><strong>Emma Turner - April 5, 2023</strong></h6>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-4  mb-4">
-                                        <p>"Da quando ho adottato la paperella di gomma, il mio processo di debugging è
-                                            migliorato notevolmente. La trovo molto utile per schiarirmi le idee e
-                                            trovare errori nascosti. La porto sempre con me, ovunque vada!"</p>
-                                        <p class="text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </p>
-                                        <h6><strong>Rachel Bryan - April 18, 2023</strong></h6>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-4  mb-4">
-                                        <p>"La mia paperella di gomma è il miglior collega che potessi chiedere. Sempre
-                                            pronta ad ascoltare, mai giudicante. È sorprendente come qualcosa di così
-                                            semplice possa essere così efficace nel risolvere problemi complessi. E non
-                                            dimentichiamo che è anche adorabile!"</p>
-                                        <p class="text-warning">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </p>
-                                        <h6><strong>Park C - May 22, 2023</strong></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
+                <swiper-container class="mySwiper row d-flex text-center z-n1  p-5 " pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                    <swiper-slide class="col-12 col-lg-4  mb-4">
+                            <p>"La paperella di gomma è diventata il mio strumento di debugging preferito.
+                                Spiegare i problemi al mio 'assistente' silenzioso mi ha aiutato a risolvere
+                                bug che altrimenti mi avrebbero fatto impazzire. È anche un ottimo
+                                antistress nelle giornate difficili!"</p>
+                            <p class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h6><strong>David William - Feb 22, 2023</strong></h6>
+                    </swiper-slide>
+                    <swiper-slide class="col-12 col-lg-4 mb-4">
+                            <p>"Non avrei mai immaginato quanto una semplice paperella di gomma potesse fare
+                                la differenza. È incredibile come verbalizzare i problemi davanti alla
+                                paperella mi aiuti a vedere soluzioni che prima non notavo. Inoltre, è
+                                carinissima sulla mia scrivania!"</p>
+                            <p class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h6><strong>Emma Turner - April 5, 2023</strong></h6>
+                    </swiper-slide>
+                    <swiper-slide class="col-12 col-lg-4 mb-4 ">
+                            <p>"Da quando ho adottato la paperella di gomma, il mio processo di debugging è
+                                migliorato notevolmente. La trovo molto utile per schiarirmi le idee e
+                                trovare errori nascosti. La porto sempre con me, ovunque vada!"</p>
+                            <p class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h6><strong>Rachel Bryan - April 18, 2023</strong></h6>
+                    </swiper-slide>
+                    <swiper-slide class="col-12 col-lg-4 mb-4">
+                        
+                            <p>"La mia paperella di gomma è il miglior collega che potessi chiedere. Sempre
+                                pronta ad ascoltare, mai giudicante. È sorprendente come qualcosa di così
+                                semplice possa essere così efficace nel risolvere problemi complessi. E non
+                                dimentichiamo che è anche adorabile!"</p>
+                            <p class="text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </p>
+                            <h6><strong>Park C - May 22, 2023</strong></h6>
+                    </swiper-slide>
+                </swiper-container>
         </section>
 
         <section id="paperelle" class="grayBg class container-fluid mb-4">
-            <div class="row pb-4 py-5">
+            <div class="row pb-4 ">
                 <div class="col-12 text-center m-2">
                     <h1 class="mb-4">La collezione di paperelle</h1>
                     <p class="mb-4">Una paperela per ogni stile di programmazione</p>
@@ -321,7 +308,7 @@
             </div>
         </section>
 
-        <section id="FAQs" class="domande container-fluid align-item-center mb-4">
+        <section id="FAQs" class="domande container-fluid align-item-center mb-4 z-n1 ">
             <div class="row">
                 <div class="col-12 col-lg-6 d-flex justify-content-center align-item-center ">
                     <img class="img-fluid mb-4" src="./asset/single-image2.png" alt="Developer">
@@ -464,6 +451,8 @@
             <p><i class="fa-regular fa-copyright"></i> 2024 BooLanding Product. Designed by MarcoSac1</p>
         </div>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 
