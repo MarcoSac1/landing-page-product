@@ -5,9 +5,11 @@
     scroll-padding-top: 80px
 }
 
-body{
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
 }
+
 nav{
     z-index: 1;
     top: 0;
