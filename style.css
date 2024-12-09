@@ -204,6 +204,13 @@ button.accordion-button:focus{
     box-shadow: inherit;
 }
 
-@media screen and (max-height: 450px) {
+
+
+@media screen and (min-width: 1200px) {
+    .edge{
+        border-left: 1px solid rgb(212, 212, 212);
+        border-right: 1px solid rgb(212, 212, 212);
+    }
+    
     
 }
